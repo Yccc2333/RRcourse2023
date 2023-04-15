@@ -1,0 +1,21 @@
+Linux instance-1 5.10.0-21-cloud-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+x_yang6@instance-1:~$ uname -a
+Linux instance-1 5.10.0-21-cloud-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64 GNU/Linux
+x_yang6@instance-1:~$ touch test.txt
+x_yang6@instance-1:~$ touch test.txt
+x_yang6@instance-1:~$ ls
+test.txt
+x_yang6@instance-1:~$ ls -l
+total 0
+-rw-r--r-- 1 x_yang6 x_yang6 0 Apr 15 15:15 test.txt
+x_yang6@instance-1:~$ 
+
+
+
