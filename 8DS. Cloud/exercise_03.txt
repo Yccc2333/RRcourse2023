@@ -1,0 +1,189 @@
+x_yang6
+top - 10:22:23 up 3 days, 19:15,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  75 total,   1 running,  74 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3930.8 total,   3373.7 free,    115.6 used,    441.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   3593.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                  
+    418 root      20   0  730324  28684  14284 S   1.4   0.7   0:31.28 google_osconfig                          
+      1 root      20   0   98336  10304   7928 S   0.0   0.3   0:08.00 systemd                                  
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.07 kthreadd                                 
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                   
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                               
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri              
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                             
+      9 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                          
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                          
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.14 ksoftirqd/0                              
+     12 root      20   0       0      0      0 I   0.0   0.0   0:04.00 rcu_sched                                
+     13 root      rt   0       0      0      0 S   0.0   0.0   0:01.74 migration/0                              
+     15 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                  
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1                                  
+     17 root      rt   0       0      0      0 S   0.0   0.0   0:01.69 migration/1                              
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.17 ksoftirqd/1                              
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/1:0H-events_highpri              
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                
+     24 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                    
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kauditd                                  
+     27 root      20   0       0      0      0 S   0.0   0.0   0:00.10 khungtaskd                               
+     28 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper                               
+     29 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback                                
+     30 root      20   0       0      0      0 S   0.0   0.0   0:12.33 kcompactd0                               
+     31 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd                                     
+     32 root      39  19       0      0      0 S   0.0   0.0   0:01.31 khugepaged                               
+     51 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd                              
+     52 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd                                  
+     53 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio                           
+     54 root       0 -20       0      0      0 I   0.0   0.0   0:01.44 kworker/1:1H-kblockd                     
+     55 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kswapd0                                  
+x_yang6@instance-1:~/rr$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP group default qlen 1000
+    link/ether 42:01:0a:b6:00:02 brd ff:ff:ff:ff:ff:ff
+    altname enp0s4
+    inet 10.182.0.2/32 brd 10.182.0.2 scope global dynamic ens4
+       valid_lft 81359sec preferred_lft 81359sec
+    inet6 fe80::4001:aff:feb6:2/64 scope link 
+       valid_lft forever preferred_lft forever
+
+
+x_yang6@instance-1:/etc$ ip a| head -n -3
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP group default qlen 1000
+    link/ether 42:01:0a:b6:00:02 brd ff:ff:ff:ff:ff:ff
+    altname enp0s4
+    inet 10.182.0.2/32 brd 10.182.0.2 scope global dynamic ens4
+
+
+x_yang6@instance-1:/etc$ cd /etc
+x_yang6@instance-1:/etc$ ls
+X11                     deluser.conf        inputrc          modules-load.d  rc2.d         subuid-
+adduser.conf            dhcp                iproute2         motd            rc3.d         sudo.conf
+alternatives            dpkg                issue            mtab            rc4.d         sudo_logsrvd.conf
+apparmor                e2scrub.conf        issue.net        nanorc          rc5.d         sudoers
+apparmor.d              environment         kernel           netconfig       rc6.d         sudoers.d
+apt                     ethertypes          kernel-img.conf  network         rcS.d         sv
+bash.bashrc             fstab               ld.so.cache      networks        resolv.conf   sysctl.conf
+bash_completion.d       fstab.old           ld.so.conf       nsswitch.conf   rmt           sysctl.d
+bindresvport.blacklist  gai.conf            ld.so.conf.d     nvme            rpc           systemd
+binfmt.d                google_instance_id  ldap             opt             rsyslog.conf  terminfo
+boto.cfg                groff               libaudit.conf    os-release      rsyslog.d     timezone
+ca-certificates         group               localtime        pam.conf        runit         tmpfiles.d
+ca-certificates.conf    group-              logcheck         pam.d           security      ucf.conf
+chrony                  grub.d              login.defs       passwd          selinux       udev
+cron.d                  gshadow             logrotate.conf   passwd-         services      ufw
+cron.daily              gshadow-            logrotate.d      pm              shadow        update-motd.d
+cron.hourly             gss                 machine-id       ppp             shadow-       vim
+cron.monthly            host.conf           magic            profile         shells        wgetrc
+cron.weekly             hostname            magic.mime       profile.d       skel          xattr.conf
+crontab                 hosts               manpath.config   protocols       ssh           xdg
+dbus-1                  hosts.allow         mime.types       python3         ssl
+debconf.conf            hosts.deny          mke2fs.conf      python3.9       subgid
+debian_version          init.d              modprobe.d       rc0.d           subgid-
+default                 initramfs-tools     modules          rc1.d           subuid
+x_yang6@instance-1:/etc$ cat filename
+cat: filename: No such file or directory
+x_yang6@instance-1:/etc$ cat adduser.conf 
+# /etc/adduser.conf: `adduser' configuration.
+# See adduser(8) and adduser.conf(5) for full documentation.
+
+# The DSHELL variable specifies the default login shell on your
+# system.
+DSHELL=/bin/bash
+
+# The DHOME variable specifies the directory containing users' home
+# directories.
+DHOME=/home
+
+# If GROUPHOMES is "yes", then the home directories will be created as
+# /home/groupname/user.
+GROUPHOMES=no
+
+# If LETTERHOMES is "yes", then the created home directories will have
+# an extra directory - the first letter of the user name. For example:
+# /home/u/user.
+LETTERHOMES=no
+
+# The SKEL variable specifies the directory containing "skeletal" user
+# files; in other words, files such as a sample .profile that will be
+# copied to the new user's home directory when it is created.
+SKEL=/etc/skel
+
+# FIRST_SYSTEM_[GU]ID to LAST_SYSTEM_[GU]ID inclusive is the range for UIDs
+# for dynamically allocated administrative and system accounts/groups.
+# Please note that system software, such as the users allocated by the base-passwd
+# package, may assume that UIDs less than 100 are unallocated.
+FIRST_SYSTEM_UID=100
+LAST_SYSTEM_UID=999
+
+FIRST_SYSTEM_GID=100
+LAST_SYSTEM_GID=999
+
+# FIRST_[GU]ID to LAST_[GU]ID inclusive is the range of UIDs of dynamically
+# allocated user accounts/groups.
+FIRST_UID=1000
+LAST_UID=59999
+
+FIRST_GID=1000
+LAST_GID=59999
+
+# The USERGROUPS variable can be either "yes" or "no".  If "yes" each
+# created user will be given their own group to use as a default.  If
+# "no", each created user will be placed in the group whose gid is
+# USERS_GID (see below).
+USERGROUPS=yes
+
+# If USERGROUPS is "no", then USERS_GID should be the GID of the group
+# `users' (or the equivalent group) on your system.
+USERS_GID=100
+
+# If DIR_MODE is set, directories will be created with the specified
+# mode. Otherwise the default mode 0755 will be used.
+DIR_MODE=0755
+
+# If SETGID_HOME is "yes" home directories for users with their own
+# group the setgid bit will be set. This was the default for
+# versions << 3.13 of adduser. Because it has some bad side effects we
+# no longer do this per default. If you want it nevertheless you can
+# still set it here.
+SETGID_HOME=no
+
+# If QUOTAUSER is set, a default quota will be set from that user with
+# `edquota -p QUOTAUSER newuser'
+QUOTAUSER=""
+
+# If SKEL_IGNORE_REGEX is set, adduser will ignore files matching this
+# regular expression when creating a new home directory
+SKEL_IGNORE_REGEX="dpkg-(old|new|dist|save)"
+
+# Set this if you want the --add_extra_groups option to adduser to add
+# new users to other groups.
+# This is the list of groups that new non-system users will be added to
+# Default:
+#EXTRA_GROUPS="dialout cdrom floppy audio video plugdev users"
+
+# If ADD_EXTRA_GROUPS is set to something non-zero, the EXTRA_GROUPS
+# option above will be default behavior for adding new, non-system users
+#ADD_EXTRA_GROUPS=1
+
+
+# check user and group names also against this regular expression.
+#NAME_REGEX="^[a-z][-a-z0-9_]*\$"
+x_yang6@instance-1:/etc$ cat adduser.conf | head -3
+# /etc/adduser.conf: `adduser' configuration.
+# See adduser(8) and adduser.conf(5) for full documentation.
+
+x_yang6@instance-1:/etc$ head -3 adduser.conf 
+# /etc/adduser.conf: `adduser' configuration.
+# See adduser(8) and adduser.conf(5) for full documentation.
